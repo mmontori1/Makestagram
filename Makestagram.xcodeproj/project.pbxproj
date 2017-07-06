@@ -13,6 +13,8 @@
 		01B37C201F0E7347008B01A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */; };
 		01B37C211F0E7347008B01A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C1F1F0E7347008B01A8 /* Main.storyboard */; };
 		01B37C241F0E734F008B01A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C221F0E734F008B01A8 /* GoogleService-Info.plist */; };
+		01BD434F1F0E774800CE51A8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01BD434E1F0E774800CE51A8 /* Login.storyboard */; };
+		01BD43511F0E784B00CE51A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD43501F0E784B00CE51A8 /* LoginViewController.swift */; };
 		7AD66F9FA6733FD4073D2B26 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408EEAC02352D1D65B14CE93 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		01B37C1F1F0E7347008B01A8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		01B37C221F0E734F008B01A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01B37C231F0E734F008B01A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		01BD434E1F0E774800CE51A8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		01BD43501F0E784B00CE51A8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		408EEAC02352D1D65B14CE93 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85B1EB88FF55B7C7464AEDC /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		DAB957B9B37AC0E2B18616CE /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		01BD434B1F0E747100CE51A8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				01BD434E1F0E774800CE51A8 /* Login.storyboard */,
 				01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */,
 				01B37C1F1F0E7347008B01A8 /* Main.storyboard */,
 			);
@@ -93,6 +98,7 @@
 		01BD434D1F0E74A800CE51A8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				01BD43501F0E784B00CE51A8 /* LoginViewController.swift */,
 				01B37C1C1F0E7337008B01A8 /* ViewController.swift */,
 			);
 			name = "View Controllers";
@@ -181,6 +187,7 @@
 				01B37C211F0E7347008B01A8 /* Main.storyboard in Resources */,
 				01B37C241F0E734F008B01A8 /* GoogleService-Info.plist in Resources */,
 				0163DD3E1F0E6F0C00ACE0EC /* Assets.xcassets in Resources */,
+				01BD434F1F0E774800CE51A8 /* Login.storyboard in Resources */,
 				01B37C201F0E7347008B01A8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BD43511F0E784B00CE51A8 /* LoginViewController.swift in Sources */,
 				01B37C1D1F0E7337008B01A8 /* ViewController.swift in Sources */,
 				0163DD371F0E6F0C00ACE0EC /* AppDelegate.swift in Sources */,
 			);
