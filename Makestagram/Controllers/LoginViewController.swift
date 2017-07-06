@@ -57,20 +57,22 @@ extension LoginViewController: FUIAuthDelegate {
             assertionFailure("Error signing in: \(error.localizedDescription)")
         }
         
-        // Reading data from Firebase database
         guard let user = user
             else { return }
         
-        let userRef = Database.database().reference().child("users").child(user.uid)
-        
-        userRef.observeSingleEvent(of: .value, with: { [unowned self] (snapshot) in
-            // Retreiving data from Firebase Database
-            if let user = User(snapshot: snapshot) {
-                print("Welcome back, \(user.username).")
+        UserService.show(forUID: user.uid) { (user) in
+            // handle existing user
+            if let user = user {
+                User.setCurrent(user)
+                
+                let initialViewController = UIStoryboard.initialViewController(for: .main)
+                self.view.window?.rootViewController = initialViewController
+                self.view.window?.makeKeyAndVisible()
             }
+            // handle new user
             else {
-                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+                self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
             }
-        })
+        }
     }
 }
