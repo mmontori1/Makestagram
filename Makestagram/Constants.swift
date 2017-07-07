@@ -15,6 +15,12 @@ struct Constants {
     struct FirDB {
         static let username = "username"
         static let users = "users"
+        static let posts = "posts"
+    }
+    struct FirPost {
+        static let imageURL = "image_url"
+        static let imageHeight = "image_height"
+        static let createdAgo = "created_at"
     }
     struct UserDefaults {
         static let currentUser = "currentUser"
