@@ -27,4 +27,17 @@ class Post {
         self.imageHeight = imageHeight
         self.creationDate = Date()
     }
+    
+    init?(snapshot: DataSnapshot) {
+        guard let dict = snapshot.value as? [String : Any],
+            let imageURL = dict[Constants.FirPost.imageURL] as? String,
+            let imageHeight = dict[Constants.FirPost.imageHeight] as? CGFloat,
+            let createdAgo = dict[Constants.FirPost.createdAgo] as? TimeInterval
+            else { return nil }
+        
+        self.key = snapshot.key
+        self.imageURL = imageURL
+        self.imageHeight = imageHeight
+        self.creationDate = Date(timeIntervalSince1970: createdAgo)
+    }
 }

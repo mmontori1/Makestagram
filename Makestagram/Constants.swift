@@ -9,6 +9,9 @@
 import Foundation
 
 struct Constants {
+    struct PostCell {
+        static let PostImageCell = "PostImageCell"
+    }
     struct Segue {
         static let toCreateUsername = "toCreateUsername"
     }

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014F2D6B1F1003C6000EDE1F /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F2D6A1F1003C6000EDE1F /* PostImageCell.swift */; };
 		0163DD371F0E6F0C00ACE0EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0163DD361F0E6F0C00ACE0EC /* AppDelegate.swift */; };
 		0163DD3E1F0E6F0C00ACE0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0163DD3D1F0E6F0C00ACE0EC /* Assets.xcassets */; };
 		016B1A731F0FDF4300297EAE /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B1A721F0FDF4300297EAE /* StorageReference+Post.swift */; };
+		016B1A771F0FE54000297EAE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016B1A761F0FE54000297EAE /* Home.storyboard */; };
 		01B37C201F0E7347008B01A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */; };
 		01B37C211F0E7347008B01A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C1F1F0E7347008B01A8 /* Main.storyboard */; };
 		01B37C241F0E734F008B01A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C221F0E734F008B01A8 /* GoogleService-Info.plist */; };
@@ -32,10 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		014F2D6A1F1003C6000EDE1F /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageCell.swift; path = Views/PostImageCell.swift; sourceTree = "<group>"; };
 		0163DD331F0E6F0C00ACE0EC /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0163DD361F0E6F0C00ACE0EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0163DD3D1F0E6F0C00ACE0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		016B1A721F0FDF4300297EAE /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "StorageReference+Post.swift"; path = "Extensions/StorageReference+Post.swift"; sourceTree = "<group>"; };
+		016B1A761F0FE54000297EAE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B37C1F1F0E7347008B01A8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		01B37C221F0E734F008B01A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			children = (
 				0163DD361F0E6F0C00ACE0EC /* AppDelegate.swift */,
 				01BD43571F0E8A1E00CE51A8 /* Models */,
+				016B1A781F10037900297EAE /* Views */,
 				01BD434D1F0E74A800CE51A8 /* View Controllers */,
 				01BD434B1F0E747100CE51A8 /* Storyboards */,
 				01BD435C1F0EAE3E00CE51A8 /* Services */,
@@ -106,12 +111,21 @@
 			path = Makestagram;
 			sourceTree = "<group>";
 		};
+		016B1A781F10037900297EAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				014F2D6A1F1003C6000EDE1F /* PostImageCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		01BD434B1F0E747100CE51A8 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				01BD434E1F0E774800CE51A8 /* Login.storyboard */,
 				01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */,
 				01B37C1F1F0E7347008B01A8 /* Main.storyboard */,
+				016B1A761F0FE54000297EAE /* Home.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -258,6 +272,7 @@
 				01B37C211F0E7347008B01A8 /* Main.storyboard in Resources */,
 				01B37C241F0E734F008B01A8 /* GoogleService-Info.plist in Resources */,
 				0163DD3E1F0E6F0C00ACE0EC /* Assets.xcassets in Resources */,
+				016B1A771F0FE54000297EAE /* Home.storyboard in Resources */,
 				01BD434F1F0E774800CE51A8 /* Login.storyboard in Resources */,
 				01B37C201F0E7347008B01A8 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -324,6 +339,7 @@
 				01EBD6BE1F0FC01D0062F4A6 /* MainTabBarController.swift in Sources */,
 				01BD435E1F0EAE6100CE51A8 /* UserService.swift in Sources */,
 				01EBD6C91F0FDD600062F4A6 /* Storyboard+Utility.swift in Sources */,
+				014F2D6B1F1003C6000EDE1F /* PostImageCell.swift in Sources */,
 				01EBD6CB1F0FDD7D0062F4A6 /* UIImage+Size.swift in Sources */,
 				01EBD6C71F0FD8090062F4A6 /* Post.swift in Sources */,
 				01BD43651F0EC48800CE51A8 /* HomeViewController.swift in Sources */,
