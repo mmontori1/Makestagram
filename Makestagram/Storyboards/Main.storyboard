@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Image Picker Controller-->
+        <!--View Controller-->
         <scene sceneID="y6V-kS-vDj">
             <objects>
-                <viewController id="Lvo-jq-uun" customClass="UIImagePickerController" sceneMemberID="viewController">
+                <viewController id="Lvo-jq-uun" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QgI-OH-q9C"/>
                         <viewControllerLayoutGuide type="bottom" id="sBd-CB-3kZ"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_plus_black" id="5fG-6d-0U3">
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="tab_plus_black" id="5fG-6d-0U3">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                 </viewController>
@@ -43,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tab_profile_black" id="dC6-y8-dO7">
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="tab_profile_black" id="dC6-y8-dO7">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                 </viewController>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="104" y="-415"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="klg-tv-8Nd">
             <objects>
-                <tabBarController id="XmB-Tr-K3I" sceneMemberID="viewController">
+                <tabBarController id="XmB-Tr-K3I" customClass="MainTabBarController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="YZl-Eq-ehJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
