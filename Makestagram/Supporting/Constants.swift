@@ -9,9 +9,6 @@
 import Foundation
 
 struct Constants {
-    struct PostCell {
-        static let PostImageCell = "PostImageCell"
-    }
     struct Segue {
         static let toCreateUsername = "toCreateUsername"
     }
@@ -20,6 +17,11 @@ struct Constants {
         static let users = "users"
         static let posts = "posts"
         static let postLikes = "postLikes"
+        static let posterUID = "poster_uid"
+        static let timeline = "timeline"
+        static let followers = "followers"
+        static let following = "following"
+
     }
     struct FirPost {
         static let likeCount = "like_count"
@@ -34,5 +36,11 @@ struct Constants {
         static let currentUser = "currentUser"
         static let uid = "uid"
         static let username = "username"
+    }
+    struct ViewIdentifiers {
+        static let PostHeaderCell = "PostHeaderCell"
+        static let PostImageCell = "PostImageCell"
+        static let PostActionCell = "PostActionCell"
+        static let FindFriendsCell = "FindFriendsCell"
     }
 }
