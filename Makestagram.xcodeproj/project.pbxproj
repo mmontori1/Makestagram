@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0146F17B1F15434C0091C939 /* open-sans in Resources */ = {isa = PBXBuildFile; fileRef = 0146F17A1F15434C0091C939 /* open-sans */; };
 		01480A411F13BEA200782BA9 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01480A401F13BEA200782BA9 /* PostHeaderCell.swift */; };
 		01480A431F13C25400782BA9 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01480A421F13C25400782BA9 /* PostActionCell.swift */; };
 		01480A451F13C42600782BA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01480A441F13C42600782BA9 /* Constants.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0146F17A1F15434C0091C939 /* open-sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "open-sans"; path = "Resources/open-sans"; sourceTree = "<group>"; };
 		01480A401F13BEA200782BA9 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostHeaderCell.swift; path = Views/PostHeaderCell.swift; sourceTree = "<group>"; };
 		01480A421F13C25400782BA9 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = Views/PostActionCell.swift; sourceTree = "<group>"; };
 		01480A441F13C42600782BA9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0146F1751F15426B0091C939 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0146F17A1F15434C0091C939 /* open-sans */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		0163DD2A1F0E6F0C00ACE0EC = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 				01EBD6BF1F0FC3290062F4A6 /* Helpers */,
 				01BD434C1F0E748500CE51A8 /* Supporting Files */,
 				01BD43611F0EBBC300CE51A8 /* Extensions */,
+				0146F1751F15426B0091C939 /* Resources */,
 				0163DD3D1F0E6F0C00ACE0EC /* Assets.xcassets */,
 			);
 			path = Makestagram;
@@ -301,6 +312,7 @@
 				0163DD3E1F0E6F0C00ACE0EC /* Assets.xcassets in Resources */,
 				01480A4B1F13EC9500782BA9 /* FindFriends.storyboard in Resources */,
 				016B1A771F0FE54000297EAE /* Home.storyboard in Resources */,
+				0146F17B1F15434C0091C939 /* open-sans in Resources */,
 				01BD434F1F0E774800CE51A8 /* Login.storyboard in Resources */,
 				01B37C201F0E7347008B01A8 /* LaunchScreen.storyboard in Resources */,
 			);

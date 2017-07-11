@@ -49,6 +49,19 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-ExtraBold.tff</string>
+		<string>OpenSans-ExtraBoldItalic.tff</string>
+		<string>OpenSans-Italic.tff</string>
+		<string>OpenSans-Light.tff</string>
+		<string>OpenSans-LightItalic.tff</string>
+		<string>OpenSans-Regular.tff</string>
+		<string>OpenSans-Semibold.tff</string>
+		<string>OpenSans-SemiboldItalic.tff</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
