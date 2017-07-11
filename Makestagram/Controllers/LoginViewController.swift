@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 import FirebaseAuthUI
+import FirebaseFacebookAuthUI
+import FirebaseGoogleAuthUI
 import FirebaseDatabase
 
 typealias FIRUser = FirebaseAuth.User
@@ -26,15 +28,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginClicked(_ sender: Any) {
-        guard let authUI = FUIAuth.defaultAuthUI() else {
-            return
-        }
+        guard let authUI = FUIAuth.defaultAuthUI()
+            else { return }
         
         authUI.delegate = self
         
+        // google & facebook providers for login
+        let providers: [FUIAuthProvider] = [FUIGoogleAuth(), FUIFacebookAuth()]
+        authUI.providers = providers
+        
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
-        print("Login clicked!")
     }
 
 }
