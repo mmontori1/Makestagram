@@ -12,7 +12,7 @@ import FirebaseDatabase
 struct FollowService {
     static func isUserFollowed(_ user: User, forCurrentUserWithCompletion completion: @escaping (Bool) -> Void) {
         let currentUID = User.current.uid
-        let ref = Database.database().reference().child(Constants.FirDB.followers).child(user.uid)
+        let ref = DatabaseReference.toLocation(.followers(uid: user.uid))
         ref.queryEqual(toValue: nil, childKey: currentUID).observeSingleEvent(of: .value, with: { (snapshot) in
             if let _ = snapshot.value as? [String : Bool] {
                 completion(true)

@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase.FIRDataSnapshot
 
-class Post {
+class Post : MGKeyed{
     var likeCount: Int
     var key: String?
     var isLiked = false
