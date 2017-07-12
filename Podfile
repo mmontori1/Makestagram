@@ -22,4 +22,6 @@ target 'Makestagram' do
   pod 'FacebookLogin'
   pod 'GoogleSignIn'
 
+  pod 'JSQMessagesViewController'
+
 end

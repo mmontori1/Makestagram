@@ -166,7 +166,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="MbM-lm-7nv">
-                        <barButtonItem key="leftBarButtonItem" image="tab_find_friends_black" id="CxX-gc-V34">
+                        <barButtonItem key="rightBarButtonItem" image="tab_find_friends_black" id="CxX-gc-V34">
                             <connections>
                                 <segue destination="1yL-U0-1Kc" kind="show" identifier="displayFindFriends" id="mEk-MN-Eyr"/>
                             </connections>
@@ -190,7 +190,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="RSQ-hz-jm7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RSQ-hz-jm7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

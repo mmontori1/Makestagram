@@ -119,6 +119,36 @@ struct UserService {
         })
     }
     
+    static func following(for user: User = User.current, completion: @escaping ([User]) -> Void) {
+        let followingRef = DatabaseReference.toLocation(.following(uid: user.uid))
+
+        followingRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let followingDict = snapshot.value as? [String : Bool] else {
+                return completion([])
+            }
+            
+            var following = [User]()
+            let dispatchGroup = DispatchGroup()
+            
+            for uid in followingDict.keys {
+                dispatchGroup.enter()
+                
+                show(forUID: uid) { user in
+                    if let user = user {
+                        following.append(user)
+                    }
+                    
+                    dispatchGroup.leave()
+                }
+            }
+            
+            dispatchGroup.notify(queue: .main) {
+                completion(following)
+            }
+        })
+    }
+
+    
     static func timeline(pageSize: UInt, lastPostKey: String? = nil, completion: @escaping ([Post]) -> Void) {
         let currentUser = User.current
         
@@ -167,6 +197,19 @@ struct UserService {
             posts(for: user, completion: { posts in
                 completion(userRef, user, posts)
             })
+        })
+    }
+    
+    static func observeChats(for user: User = User.current, withCompletion completion: @escaping (DatabaseReference, [Chat]) -> Void) -> DatabaseHandle {
+        let ref = DatabaseReference.toLocation(.userChats(uid: user.uid))
+        
+        return ref.observe(.value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
+                return completion(ref, [])
+            }
+            
+            let chats = snapshot.flatMap(Chat.init)
+            completion(ref, chats)
         })
     }
 }

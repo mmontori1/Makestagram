@@ -35,7 +35,7 @@ struct FollowService {
         let followData = ["\(Constants.FirDB.followers)/\(user.uid)/\(currentUID)" : true,
                           "\(Constants.FirDB.following)/\(currentUID)/\(user.uid)" : true]
         
-        let ref = Database.database().reference()
+        let ref = DatabaseReference.toLocation(.root)
         ref.updateChildValues(followData) { (error, _) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
@@ -90,7 +90,7 @@ struct FollowService {
         let followData = ["\(Constants.FirDB.followers)/\(user.uid)/\(currentUID)" : NSNull(),
                           "\(Constants.FirDB.following)/\(currentUID)/\(user.uid)" : NSNull()]
         
-        let ref = Database.database().reference()
+        let ref = DatabaseReference.toLocation(.root)
         ref.updateChildValues(followData) { (error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
