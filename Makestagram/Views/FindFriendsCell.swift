@@ -18,6 +18,7 @@ class FindFriendsCell: UITableViewCell {
     
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var followButton: UIButton!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,6 +36,6 @@ class FindFriendsCell: UITableViewCell {
     }
 
     @IBAction func followClicked(_ sender: UIButton) {
-        delegate?.didTapFollowButton(sender, on: self)
+        self.delegate?.didTapFollowButton(sender, on: self)
     }
 }

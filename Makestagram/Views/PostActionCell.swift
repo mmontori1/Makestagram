@@ -28,6 +28,7 @@ class PostActionCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
     @IBAction func likeClicked(_ sender: UIButton) {
         delegate?.didTapLikeButton(sender, on: self)
     }

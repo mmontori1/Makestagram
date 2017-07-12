@@ -95,7 +95,7 @@
                             <constraint firstItem="haQ-uj-Qgs" firstAttribute="top" secondItem="ely-Zd-YNp" secondAttribute="bottom" id="vaG-Qh-KB5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="" image="tab_profile_black" id="dC6-y8-dO7">
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="tab_find_friends_black" id="dC6-y8-dO7">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Find Friends" id="hYQ-k9-XAm"/>
@@ -110,6 +110,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tab_profile_black" width="25" height="25"/>
+        <image name="tab_find_friends_black" width="25" height="25"/>
     </resources>
 </document>

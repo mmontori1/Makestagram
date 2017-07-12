@@ -54,7 +54,7 @@ struct FollowService {
             })
             
             dispatchGroup.enter()
-            let followerCountRef = DatabaseReference.toLocation(.followerCount(uid: currentUID))
+            let followerCountRef = DatabaseReference.toLocation(.followerCount(uid: user.uid))
             followerCountRef.runTransactionBlock({ (mutableData) -> TransactionResult in
                 let currentCount = mutableData.value as? Int ?? 0
                 mutableData.value = currentCount + 1
@@ -109,7 +109,7 @@ struct FollowService {
             })
             
             dispatchGroup.enter()
-            let followerCountRef = DatabaseReference.toLocation(.followerCount(uid: currentUID))
+            let followerCountRef = DatabaseReference.toLocation(.followerCount(uid: user.uid))
             followerCountRef.runTransactionBlock({ (mutableData) -> TransactionResult in
                 let currentCount = mutableData.value as? Int ?? 0
                 mutableData.value = currentCount - 1

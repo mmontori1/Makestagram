@@ -32,6 +32,14 @@ class FindFriendsViewController: UIViewController {
         tableView.rowHeight = 71
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "doneFindFriends" {
+                print("Transitioning back to Profile")
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -44,7 +52,7 @@ extension FindFriendsViewController: FindFriendsCellDelegate {
         
         followButton.isUserInteractionEnabled = false
         let followee = users[indexPath.row]
-        
+
         FollowService.setIsFollowing(!followee.isFollowed, fromCurrentUserTo: followee) { (success) in
             defer {
                 followButton.isUserInteractionEnabled = true

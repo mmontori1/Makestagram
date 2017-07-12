@@ -60,6 +60,18 @@ class ProfileViewController: UIViewController {
         
         profileRef?.removeObserver(withHandle: profileHandle)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "displayFindFriends" {
+                print("Transitioning to the Find Friends")
+            }
+        }
+    }
+    
+    @IBAction func unwindToListNotesViewController(_ segue: UIStoryboardSegue) {
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
