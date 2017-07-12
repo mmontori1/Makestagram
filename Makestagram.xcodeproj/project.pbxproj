@@ -19,7 +19,6 @@
 		011E5F101F154EE30052515F /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 011E5F061F154EE30052515F /* OpenSans-SemiboldItalic.ttf */; };
 		011E5F121F15530F0052515F /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E5F111F15530F0052515F /* UIColor+Utility.swift */; };
 		011E5F141F1554A00052515F /* UIFont+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E5F131F1554A00052515F /* UIFont+Utility.swift */; };
-		011E5F181F1570D20052515F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E5F171F1570D20052515F /* ProfileViewController.swift */; };
 		01480A411F13BEA200782BA9 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01480A401F13BEA200782BA9 /* PostHeaderCell.swift */; };
 		01480A431F13C25400782BA9 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01480A421F13C25400782BA9 /* PostActionCell.swift */; };
 		01480A451F13C42600782BA9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01480A441F13C42600782BA9 /* Constants.swift */; };
@@ -35,6 +34,11 @@
 		016B1A771F0FE54000297EAE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016B1A761F0FE54000297EAE /* Home.storyboard */; };
 		018141951F1519C500D517F2 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018141941F1519C500D517F2 /* UITableView+Utility.swift */; };
 		018141971F151DA700D517F2 /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018141961F151DA700D517F2 /* MGPaginationHelper.swift */; };
+		0197E1981F15C56F008B09A0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0197E1971F15C56F008B09A0 /* Profile.storyboard */; };
+		0197E19A1F15C799008B09A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197E1991F15C799008B09A0 /* ProfileViewController.swift */; };
+		0197E19C1F15C879008B09A0 /* PostThumbImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197E19B1F15C879008B09A0 /* PostThumbImageCell.swift */; };
+		0197E19E1F15C9A9008B09A0 /* UICollectionView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197E19D1F15C9A9008B09A0 /* UICollectionView+Utility.swift */; };
+		0197E1A01F15D265008B09A0 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197E19F1F15D265008B09A0 /* ProfileHeaderView.swift */; };
 		01B37C201F0E7347008B01A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */; };
 		01B37C211F0E7347008B01A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C1F1F0E7347008B01A8 /* Main.storyboard */; };
 		01B37C241F0E734F008B01A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01B37C221F0E734F008B01A8 /* GoogleService-Info.plist */; };
@@ -68,7 +72,6 @@
 		011E5F061F154EE30052515F /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiboldItalic.ttf"; path = "Resources/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		011E5F111F15530F0052515F /* UIColor+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Utility.swift"; path = "Extensions/UIColor+Utility.swift"; sourceTree = "<group>"; };
 		011E5F131F1554A00052515F /* UIFont+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+Utility.swift"; path = "Extensions/UIFont+Utility.swift"; sourceTree = "<group>"; };
-		011E5F171F1570D20052515F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
 		01480A401F13BEA200782BA9 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostHeaderCell.swift; path = Views/PostHeaderCell.swift; sourceTree = "<group>"; };
 		01480A421F13C25400782BA9 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = Views/PostActionCell.swift; sourceTree = "<group>"; };
 		01480A441F13C42600782BA9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
@@ -85,6 +88,11 @@
 		016B1A761F0FE54000297EAE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		018141941F1519C500D517F2 /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Utility.swift"; path = "Extensions/UITableView+Utility.swift"; sourceTree = "<group>"; };
 		018141961F151DA700D517F2 /* MGPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPaginationHelper.swift; path = Helpers/MGPaginationHelper.swift; sourceTree = "<group>"; };
+		0197E1971F15C56F008B09A0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = Storyboards/Profile.storyboard; sourceTree = "<group>"; };
+		0197E1991F15C799008B09A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
+		0197E19B1F15C879008B09A0 /* PostThumbImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostThumbImageCell.swift; path = Views/PostThumbImageCell.swift; sourceTree = "<group>"; };
+		0197E19D1F15C9A9008B09A0 /* UICollectionView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Utility.swift"; path = "Extensions/UICollectionView+Utility.swift"; sourceTree = "<group>"; };
+		0197E19F1F15D265008B09A0 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileHeaderView.swift; path = Views/ProfileHeaderView.swift; sourceTree = "<group>"; };
 		01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B37C1F1F0E7347008B01A8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		01B37C221F0E734F008B01A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -169,7 +177,6 @@
 				01BD43611F0EBBC300CE51A8 /* Extensions */,
 				011E5EFC1F154ECF0052515F /* Resources */,
 				0163DD3D1F0E6F0C00ACE0EC /* Assets.xcassets */,
-				011E5F171F1570D20052515F /* ProfileViewController.swift */,
 			);
 			path = Makestagram;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 		016B1A781F10037900297EAE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0197E19F1F15D265008B09A0 /* ProfileHeaderView.swift */,
+				0197E19B1F15C879008B09A0 /* PostThumbImageCell.swift */,
 				01480A4C1F13F1C500782BA9 /* FindFriendsCell.swift */,
 				01480A421F13C25400782BA9 /* PostActionCell.swift */,
 				01480A401F13BEA200782BA9 /* PostHeaderCell.swift */,
@@ -191,6 +200,7 @@
 				01BD434E1F0E774800CE51A8 /* Login.storyboard */,
 				01B37C1E1F0E7347008B01A8 /* LaunchScreen.storyboard */,
 				01B37C1F1F0E7347008B01A8 /* Main.storyboard */,
+				0197E1971F15C56F008B09A0 /* Profile.storyboard */,
 				01480A4A1F13EC9500782BA9 /* FindFriends.storyboard */,
 				016B1A761F0FE54000297EAE /* Home.storyboard */,
 			);
@@ -210,6 +220,7 @@
 		01BD434D1F0E74A800CE51A8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0197E1991F15C799008B09A0 /* ProfileViewController.swift */,
 				01EBD6BD1F0FC01D0062F4A6 /* MainTabBarController.swift */,
 				01BD43641F0EC48800CE51A8 /* HomeViewController.swift */,
 				01BD43661F0EC49B00CE51A8 /* FindFriendsViewController.swift */,
@@ -246,6 +257,7 @@
 				011E5F111F15530F0052515F /* UIColor+Utility.swift */,
 				011E5F131F1554A00052515F /* UIFont+Utility.swift */,
 				018141941F1519C500D517F2 /* UITableView+Utility.swift */,
+				0197E19D1F15C9A9008B09A0 /* UICollectionView+Utility.swift */,
 				016B1A721F0FDF4300297EAE /* StorageReference+Post.swift */,
 				01480A4E1F14159700782BA9 /* DatabaseReference+Location.swift */,
 				01EBD6C81F0FDD600062F4A6 /* Storyboard+Utility.swift */,
@@ -349,6 +361,7 @@
 				01B37C241F0E734F008B01A8 /* GoogleService-Info.plist in Resources */,
 				011E5F0F1F154EE30052515F /* OpenSans-Semibold.ttf in Resources */,
 				011E5F101F154EE30052515F /* OpenSans-SemiboldItalic.ttf in Resources */,
+				0197E1981F15C56F008B09A0 /* Profile.storyboard in Resources */,
 				011E5F071F154EE30052515F /* OpenSans-Bold.ttf in Resources */,
 				0163DD3E1F0E6F0C00ACE0EC /* Assets.xcassets in Resources */,
 				01480A4B1F13EC9500782BA9 /* FindFriends.storyboard in Resources */,
@@ -427,16 +440,19 @@
 				01BD43511F0E784B00CE51A8 /* LoginViewController.swift in Sources */,
 				01EBD6BE1F0FC01D0062F4A6 /* MainTabBarController.swift in Sources */,
 				01BD435E1F0EAE6100CE51A8 /* UserService.swift in Sources */,
+				0197E1A01F15D265008B09A0 /* ProfileHeaderView.swift in Sources */,
 				01480A471F13C82400782BA9 /* LikeService.swift in Sources */,
 				01480A431F13C25400782BA9 /* PostActionCell.swift in Sources */,
 				01EBD6C91F0FDD600062F4A6 /* Storyboard+Utility.swift in Sources */,
 				018141971F151DA700D517F2 /* MGPaginationHelper.swift in Sources */,
+				0197E19E1F15C9A9008B09A0 /* UICollectionView+Utility.swift in Sources */,
 				01480A4D1F13F1C500782BA9 /* FindFriendsCell.swift in Sources */,
+				0197E19C1F15C879008B09A0 /* PostThumbImageCell.swift in Sources */,
 				014F2D6B1F1003C6000EDE1F /* PostImageCell.swift in Sources */,
 				011E5F141F1554A00052515F /* UIFont+Utility.swift in Sources */,
 				01EBD6CB1F0FDD7D0062F4A6 /* UIImage+Size.swift in Sources */,
 				01EBD6C71F0FD8090062F4A6 /* Post.swift in Sources */,
-				011E5F181F1570D20052515F /* ProfileViewController.swift in Sources */,
+				0197E19A1F15C799008B09A0 /* ProfileViewController.swift in Sources */,
 				01BD43651F0EC48800CE51A8 /* HomeViewController.swift in Sources */,
 				01EBD6C11F0FC3400062F4A6 /* MGPhotoHelper.swift in Sources */,
 				01480A4F1F14159700782BA9 /* DatabaseReference+Location.swift in Sources */,
