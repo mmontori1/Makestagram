@@ -17,10 +17,13 @@ typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.backgroundView.backgroundColor = UIColor.mgBlue
+
     }
 
     override func didReceiveMemoryWarning() {

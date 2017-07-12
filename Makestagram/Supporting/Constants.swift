@@ -21,7 +21,10 @@ struct Constants {
         static let timeline = "timeline"
         static let followers = "followers"
         static let following = "following"
-
+        static let followerCount = "follower_count"
+        static let followingCount = "following_count"
+        static let postCount = "post_count"
+        
     }
     struct FirPost {
         static let likeCount = "like_count"

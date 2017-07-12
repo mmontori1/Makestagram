@@ -78,6 +78,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pIb-kn-fZh"/>
                     <connections>
+                        <outlet property="backgroundView" destination="3De-Md-ifN" id="OXK-PU-RyC"/>
                         <outlet property="loginButton" destination="DqY-tD-Wni" id="57F-Wy-mCp"/>
                         <segue destination="P9G-Be-LHA" kind="show" identifier="toCreateUsername" id="fS8-WQ-zEj"/>
                     </connections>
