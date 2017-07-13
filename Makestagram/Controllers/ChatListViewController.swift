@@ -45,6 +45,25 @@ class ChatListViewController: UIViewController {
     }
 }
 
+extension ChatListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toChat", sender: self)
+    }
+}
+
+extension ChatListViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "toChat",
+            let destination = segue.destination as? ChatViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            
+            destination.chat = chats[indexPath.row]
+        }
+    }
+}
+
 extension ChatListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chats.count

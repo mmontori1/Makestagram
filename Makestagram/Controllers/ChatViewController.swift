@@ -38,6 +38,11 @@ class ChatViewController: JSQMessagesViewController {
         super.viewDidLoad()
         
         setupJSQMessagesViewController()
+        tryObservingMessages()
+    }
+    
+    deinit {
+        messagesRef?.removeObserver(withHandle: messagesHandle)
     }
     
     func setupJSQMessagesViewController() {
@@ -50,6 +55,19 @@ class ChatViewController: JSQMessagesViewController {
         collectionView!.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
         collectionView!.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
     }
+    
+    func tryObservingMessages() {
+        guard let chatKey = chat?.key else { return }
+        
+        messagesHandle = ChatService.observeMessages(forChatKey: chatKey, completion: { [weak self] (ref, message) in
+            self?.messagesRef = ref
+            
+            if let message = message {
+                self?.messages.append(message)
+                self?.finishReceivingMessage()
+            }
+        })
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,6 +75,30 @@ class ChatViewController: JSQMessagesViewController {
     
     @IBAction func printdismissbuttontappeddismissClicked(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
+    }
+}
+
+extension ChatViewController {
+    func sendMessage(_ message: Message) {
+        if chat?.key == nil {
+            ChatService.create(from: message, with: chat, completion: { [weak self] chat in
+                guard let chat = chat else { return }
+                
+                self?.chat = chat
+                self?.tryObservingMessages()
+            })
+        }
+        else {
+            ChatService.sendMessage(message, for: chat)
+        }
+    }
+    
+    override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+        let message = Message(content: text)
+        sendMessage(message)
+        finishSendingMessage()
+        
+        JSQSystemSoundPlayer.jsq_playMessageSentAlert()
     }
 }
 

@@ -58,6 +58,7 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="grD-x5-AKl" id="pcj-Ur-nlE"/>
+                            <outlet property="delegate" destination="grD-x5-AKl" id="oIs-Cr-VIA"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Messages" id="MGR-YH-1Vn">
@@ -74,6 +75,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="HrI-fQ-sp6" id="SSr-K9-6NF"/>
+                        <segue destination="lcr-To-70h" kind="show" identifier="toChat" id="Qa3-gV-wWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ku-fg-pre" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,13 +134,13 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="BtW-aO-JpW">
                             <connections>
                                 <action selector="nextClicked:" destination="EHx-tP-THQ" id="yui-af-dpo"/>
-                                <segue destination="lcr-To-70h" kind="show" identifier="toChat" id="Wdr-zy-UCh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nextButton" destination="BtW-aO-JpW" id="wRe-Ng-BN2"/>
                         <outlet property="tableView" destination="UcV-gc-cCJ" id="Zjx-fs-Dvj"/>
+                        <segue destination="lcr-To-70h" kind="show" identifier="toChat" id="3R5-gS-CXp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyF-wi-u8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCe-1e-18J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="1260"/>
+            <point key="canvasLocation" x="563" y="2183"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hQq-mb-9LZ">
@@ -189,4 +191,7 @@
             <point key="canvasLocation" x="-815.20000000000005" y="1259.8200899550227"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3R5-gS-CXp"/>
+    </inferredMetricsTieBreakers>
 </document>

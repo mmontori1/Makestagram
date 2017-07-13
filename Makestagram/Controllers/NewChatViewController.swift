@@ -22,6 +22,14 @@ class NewChatViewController: UIViewController {
         
         nextButton.isEnabled = false
         tableView.tableFooterView = UIView()
+        
+        UserService.following { [weak self] (following) in
+            self?.following = following
+            
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
